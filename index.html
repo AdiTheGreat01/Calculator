@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="page-wrapper">
+
+    <div class="calculator" role="main" aria-label="Calculator">
+
+      <div class="screw-row">
+        <span class="screw"></span>
+        <span class="calc-label">calc!</span>
+        <span class="screw"></span>
+      </div>
+
+      <div class="display-wrapper" aria-live="polite" aria-atomic="true">
+        <div class="display-expression" id="expression" aria-label="Expression"></div>
+        <div class="display-result"   id="result"     aria-label="Result">0</div>
+      </div>
+
+      <div class="btn-grid">
+
+        <button class="btn btn-util btn-clear"  data-action="clear"  aria-label="Clear">C</button>
+        <button class="btn btn-util btn-delete" data-action="delete" aria-label="Delete last character">⌫</button>
+        <button class="btn btn-op"              data-action="op" data-value="%" aria-label="Percent">%</button>
+        <button class="btn btn-op"              data-action="op" data-value="÷" aria-label="Divide">÷</button>
+
+        <button class="btn btn-num" data-action="num" data-value="7" aria-label="7">7</button>
+        <button class="btn btn-num" data-action="num" data-value="8" aria-label="8">8</button>
+        <button class="btn btn-num" data-action="num" data-value="9" aria-label="9">9</button>
+        <button class="btn btn-op"  data-action="op"  data-value="×" aria-label="Multiply">×</button>
+
+        <button class="btn btn-num" data-action="num" data-value="4" aria-label="4">4</button>
+        <button class="btn btn-num" data-action="num" data-value="5" aria-label="5">5</button>
+        <button class="btn btn-num" data-action="num" data-value="6" aria-label="6">6</button>
+        <button class="btn btn-op"  data-action="op"  data-value="-" aria-label="Subtract">−</button>
+
+        <button class="btn btn-num" data-action="num" data-value="1" aria-label="1">1</button>
+        <button class="btn btn-num" data-action="num" data-value="2" aria-label="2">2</button>
+        <button class="btn btn-num" data-action="num" data-value="3" aria-label="3">3</button>
+        <button class="btn btn-op"  data-action="op"  data-value="+" aria-label="Add">+</button>
+
+        <button class="btn btn-num btn-zero" data-action="num" data-value="0" aria-label="0">0</button>
+        <button class="btn btn-num"          data-action="dot"               aria-label="Decimal point">.</button>
+        <button class="btn btn-equal"        data-action="equal"             aria-label="Equals">=</button>
+
+      </div>
+      <div class="screw-row screw-row--bottom">
+        <span class="screw"></span>
+        <span class="screw"></span>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
