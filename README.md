@@ -8,6 +8,9 @@ Most calculator tutorials look identical: flat gray buttons, a monospace display
 
 The goal was less about the math (that part's simple) and more about writing clean, readable vanilla JS for state management and UI updates without reaching for a framework, and pairing it with a distinct, illustrated visual style instead of a generic UI kit look.
 
+## Live Demo
+https://doodle-calculator.netlify.app/
+
 ## Features
 
 - Standard operations: addition, subtraction, multiplication, division, and percentage
@@ -67,17 +70,6 @@ npx serve .
 2. Click buttons or use your keyboard to enter numbers and operators.
 3. Press `=` or `Enter` to evaluate the expression.
 4. Press `C` / `Escape` to clear, or `Backspace` to delete the last character.
-
-## Screenshots
-
-> _[Add a screenshot of the calculator's default state here]_
-> Default view showing the display and button grid.
-
-> _[Add a screenshot of an active calculation with the expression preview]_
-> Example of a chained calculation in progress.
-
-> _[Add a screenshot of the error state, e.g. division by zero]_
-> Error handling when dividing by zero.
 
 ## Folder Structure
 
